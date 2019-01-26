@@ -1,0 +1,43 @@
+USE master
+
+GO
+
+CREATE DATABASE xyz
+
+GO
+
+USE xyz
+
+GO
+
+CREATE TABLE Persons
+
+(Persons_id Varchar(10) NOT NULL,
+
+LastName Varchar(50) NOT NULL,
+
+FirstName Varchar(50) NOT NULL,
+
+StreetAddress Varchar(50) NOT NULL,
+
+City Varchar(50) NOT NULL,
+
+CONSTRAINT persons_pk Primary key (Persons_id)
+
+)
+
+GO
+
+INSERT INTO dbo.Persons (Persons_id, LastName, FirstName, StreetAddress, City)
+
+VALUES (1, 'Faust', 'Bessie', '123 there', 'Columbia');
+
+INSERT INTO dbo.Persons (Persons_id, LastName, FirstName, StreetAddress, City)
+
+VALUES (2, 'Mark', 'Adam', '234 there St.', 'Columbia');
+
+INSERT INTO dbo.Persons (Persons_id, LastName, FirstName, StreetAddress, City)
+
+VALUES (3, 'Jefferson', 'Zeldetta', '999 What Up Drive', 'Charleston');
+
+GO
